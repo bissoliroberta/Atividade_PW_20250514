@@ -16,26 +16,20 @@
         </div>
     </header>
     <main class="container my-3">
-        <h1>Produtos</h1>
+        <h1>Categorias</h1>
         <hr>
         <table class="table table-striped">
             <thead>
                 <tr>
                     <th>Id</th>
                     <th>Nome</th>
-                    <th>Descricao</th>
-                    <th>Preco</th>
-                    <th>Quantidade</th>
                 </tr>
             </thead>
             <tbody> 
-                {% for produto in produtos %}
+                {% for categoria in categorias %}
                 <tr>
-                    <td>{{produto.id}}</td>
-                    <td>{{produto.nome}}</td>
-                    <td>{{produto.descricao}}</td>
-                    <td>{{produto.preco}}</td>
-                    <td>{{produto.quantidade}}</td>
+                    <td>{{categoria.id}}</td>
+                    <td>{{categoria.nome}}</td>
                 </tr>
                 {% endfor %}
             </tbody>
